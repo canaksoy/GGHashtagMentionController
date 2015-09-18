@@ -10,7 +10,7 @@
 
 @interface GGHashtagMentionController () {
     UITextView *_textView;
-    id <GGHashtagMentionDelegate> _delegate;
+    //id <GGHashtagMentionDelegate> _delegate;
 }
 
 @property (nonatomic, retain) UITextView *textView;
@@ -39,7 +39,7 @@
 - (void) dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UITextViewTextDidChangeNotification object:nil];
     self.textView = nil;
-    [super dealloc];
+    //[super dealloc];
 }
 
 #pragma mark - NSNotification
